@@ -1,5 +1,13 @@
 # Terraform configuration for deployement of ec2 instance using terraform_remote_state data source 
 
+# Description
+
+This directory contains 3 subfolders which purpose is to upload resources in groups one after another. The main goal is for the server to use output value for ami_id from the state file in the remote state backend after the AMI is created. Sequence for applying the configuration from every folder.
+
+1. backend
+2.  ami
+3. server
+
 ## Prerequisites
 
 - git
@@ -80,6 +88,8 @@ $ terraform apply
 | ----- | ----------- 
 | ami_id | The ID of ami after creation
 | ec2 instance ID  | ID of the resource named server
+| dev/ | directory in remote-state-1 bucket for terraform.tfstate file for AMI
+| server/ | directory in remote-state-1 for terraform.tfstate file for the ec2 instance
 
 
 
