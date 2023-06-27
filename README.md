@@ -61,7 +61,25 @@ resource "aws_instance" "server" {}
 | ami_id | AMI ID for server | string | yes
 
 
+### Initialize terraform and plan/apply
 
+```
+$ terraform init
+$ terraform plan
+$ terraform apply
+```
+
+- `Terraform apply` will:
+  - create the backend
+  - create AMI 
+  - create ec2 instance and random_pet resource
+    
+#### Outputs
+
+| Name  |	Description 
+| ----- | ----------- 
+| ami_id | The ID of ami after creation
+| ec2 instance ID  | ID of the resource named server
 
 
 
