@@ -91,16 +91,3 @@ $ terraform apply
 | dev/ | directory in remote-state-1 bucket for terraform.tfstate file for AMI
 | server/ | directory in remote-state-1 for terraform.tfstate file for the ec2 instance
 
-
-
-
-
-
-
-
-
-
-
-
-  
-
