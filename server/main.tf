@@ -2,7 +2,7 @@ terraform {
   backend "s3" {
     encrypt        = true
     bucket         = "remote-state-1"
-    key            = "learn-terraform-s3-migrate-tfc"
+    key            = "server/terraform.tfstate"
     region         = "us-west-2"
   }
 
